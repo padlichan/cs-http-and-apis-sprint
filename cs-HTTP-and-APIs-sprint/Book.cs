@@ -13,13 +13,3 @@ internal class Book
     [JsonPropertyName("published")]
     public DateTime? Published { get; set; }
 }
-
-internal class BookResponse
-{
-    [JsonPropertyName("status")]
-    public string? Status { get; set; }
-    [JsonPropertyName("code")]
-    public int Code { get; set; }
-    [JsonPropertyName("data")]
-    public List<Book>? Books { get; set; }
-}
