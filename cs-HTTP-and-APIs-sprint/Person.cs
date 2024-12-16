@@ -2,20 +2,20 @@
 
 namespace cs_HTTP_and_APIs_sprint;
 
-internal class Person(string firstName, string lastName, string email, string phoneNumber, DateTime birthday, string gender)
+internal class Person
 {
     [JsonPropertyName("id")]
     public int Id { get; set; }
     [JsonPropertyName("firstname")]
-    public string FirstName { get; set; } = firstName;
+    public string? FirstName { get; set; } 
     [JsonPropertyName("lastname")]
-    public string LastName { get; set; } = lastName;
+    public string? LastName { get; set; }
     [JsonPropertyName("email")]
-    public string Email { get; set; } = email;
+    public string? Email { get; set; }
     [JsonPropertyName("phone")]
-    public string PhoneNumber { get; set; } = phoneNumber;
+    public string? PhoneNumber { get; set; } 
     [JsonPropertyName("birthday")]
-    public DateTime Birthday { get; set; } = birthday;
+    public DateTime? Birthday { get; set; } 
     [JsonPropertyName("gender")]
-    public string Gender { get; set; } = gender;
+    public string? Gender { get; set; } 
 }
