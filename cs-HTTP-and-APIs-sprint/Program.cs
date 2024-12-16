@@ -1,9 +1,8 @@
 ﻿using System.Data;
 using cs_HTTP_and_APIs_sprint;
 
-var personResult = await FakeData.GetPersonsAsync(5);
-personResult?.Persons?.ForEach(p => Console.WriteLine($"{p.FirstName} {p.LastName}"));
-Console.WriteLine();
+//var flightResult = await FlightData.GetFlightData();
 
-var bookResult = await FakeData.GetBooksAsync(2);
-bookResult?.Books?.ForEach(b => Console.WriteLine(b.Title));
+var flightResult = await FlightData.GetFlightData();
+//Console.WriteLine(flightResult?.Flights?.Count);
+flightResult.Flights.ForEach(f => Console.WriteLine($"ID: {f.Id} | Name : {f.FlightName,-6} | Scheduled: {f.ScheduledDate} | Eu: {f.Route.Eu}"));
