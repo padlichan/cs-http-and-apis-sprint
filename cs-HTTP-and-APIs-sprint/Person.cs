@@ -16,5 +16,6 @@ internal class Person(string firstName, string lastName, string email, string ph
     public string PhoneNumber { get; set; } = phoneNumber;
     [JsonPropertyName("birthday")]
     public DateTime Birthday { get; set; } = birthday;
+    [JsonPropertyName("gender")]
     public string Gender { get; set; } = gender;
 }
