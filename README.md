@@ -1,6 +1,6 @@
 # HTTP and API Project
 
-This repository is a small project designed to practice understanding and interacting with APIs and HTTP while working with foundational concepts in client-server communication.
+This repository is a small project to practice interacting with APIs and HTTP and to learn key concepts in client-server communication.
 The project focuses on using Postman to interact with public APIs like PokeAPI and the Spaceflight News API, and creating a simple C# application to consume API data.
 
 The primary goal of this project is to demonstrate the ability to:
